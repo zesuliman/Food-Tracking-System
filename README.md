@@ -17,12 +17,12 @@ A comprehensive food-ordering and tracking application designed to streamline th
 ## 1. Discovery & Exploration
 Focus: Help users find their preferred meals efficiently.
 
-### Key Features
-- **Intelligent Sorting**
+### Key functionalities
+- **Sorting**
   - Sort by Rating — show highest-rated restaurants first.
   - Sort by Recommendation — platform-curated or popular picks.
   - Sort by Name — alphabetical listing (A–Z).
-  - Sort by Fast Delivery — prioritize restaurants with shortest ETAs.
+  - Sort by Fast Delivery — prioritize restaurants with shortest travel time.
 
 - **Multi-Layered Search**
   - Global Search — find restaurants or specific meals across the platform.
@@ -31,15 +31,19 @@ Focus: Help users find their preferred meals efficiently.
 ---
 
 ## 2. Restaurant & Menu Interaction
-Focus: Engage with vendors and select items.
+Focus: Engage with restaurants and select items.
 
-### Restaurant Profile
+### Key functionalities
+
+#### Restaurant Profile
 - Favorites — save restaurants for quick future access.
 - Share — generate links to share restaurant details externally.
-- Delivery Info — show delivery costs, ETA, and delivery types.
+- Delivery Info — show delivery costs, Estimated Time of Arrival (ETA), and delivery types.
+- Delivery Validation — validate delivery feasibility against the restaurant's delivery radius before ability to select restaurant.
 
-### Dynamic Menu
-- Categorization — browse items by category (e.g., Appetizers, Entrees, Drinks).
+
+#### Dynamic Menu
+- Categorization — browse items by category (e.g. Top picks, Offers, Desserts, Hot Deals!, Appetizers, Entrees, Drinks).
 - Meal Customization:
   - Add items to the cart.
   - Increase / decrease item quantity.
@@ -51,11 +55,13 @@ Focus: Engage with vendors and select items.
 ## 3. Cart & Order Management
 Focus: Manage the user's current selection.
 
-### Cart Overview
+### Key functionalities
+
+#### Cart Overview
 - Item Control — adjust quantities or remove items easily.
 - Persistence — ensure cart contents persist across sessions and devices (e.g., server-side cart tied to user account or persistent local storage for guests).
 
-### Price Transparency
+#### Price Transparency
 - Show detailed breakdown:
   - Subtotal
   - Discounts / Promotions
@@ -64,7 +70,7 @@ Focus: Manage the user's current selection.
   - Taxes
   - Total
 
-### Pre-Checkout
+#### Pre-Checkout
 - Confirmation — provide a final review of order details, fees, and delivery info before proceeding.
 
 ---
@@ -74,8 +80,7 @@ Focus: Complete the transaction and handle delivery preferences.
 
 ### Address & Payment
 - Address Management — select saved addresses or add new addresses.
-- Delivery Validation — validate delivery feasibility against the restaurant's delivery radius before checkout.
-- Payment Methods — support multiple payment options (cards, wallets, in-app payments, cash on delivery where applicable).
+- Payment Methods — support multiple payment options (cards, in-app payments, cash on delivery where applicable).
 
 ### Delivery Preferences
 - Express Delivery — optional toggle for expedited delivery where available.
@@ -91,13 +96,4 @@ Focus: Complete the transaction and handle delivery preferences.
   - Restrict cancellation after certain workflow milestones (e.g., once the restaurant has accepted and begun preparation or when the order is out for delivery).
   - Provide clear UI states and reasons when cancellation is disallowed.
 
----
 
-## Notes
-- This document is focused on user-facing flows and feature requirements. Implementation choices (e.g., how to persist the cart, exact delivery status states, payment processor integration) should be defined in the technical specification.
-- Consider adding:
-  - API endpoints and sample requests/responses
-  - Data model diagrams (Orders, Cart, Restaurant, MenuItem, Address, Payment)
-  - State machine for order statuses (e.g., Pending → Accepted → Preparing → Out for Delivery → Delivered → Completed)
-
----
