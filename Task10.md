@@ -26,3 +26,8 @@
 * **Alternative Flow B: Invalid Voucher Code**
   1. In Step 4, the customer applies an invalid, expired, or inapplicable voucher code.
   2. The system displays an error message (e.g., *"Invalid Voucher Code"*) and leaves the payment summary unchanged.
+
+## Flowchart
+
+<img width="4888" height="4324" alt="image" src="https://github.com/user-attachments/assets/9432d77f-bc48-4c4f-9413-cade5c9032a3" />
+
