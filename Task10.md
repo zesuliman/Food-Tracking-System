@@ -1,6 +1,3 @@
-Here is the use case formatted in raw Markdown inside a code block. You can click the copy button in the top-right corner of the block to paste it directly into your GitHub file (`.md`), issue, or pull request.
-
-```markdown
 # Use Case: View and Modify Cart
 
 **Actor:** Customer  
@@ -29,5 +26,3 @@ Here is the use case formatted in raw Markdown inside a code block. You can clic
 * **Alternative Flow B: Invalid Voucher Code**
   1. In Step 4, the customer applies an invalid, expired, or inapplicable voucher code.
   2. The system displays an error message (e.g., *"Invalid Voucher Code"*) and leaves the payment summary unchanged.
-
-```
