@@ -28,6 +28,5 @@
   2. The system displays an error message (e.g., *"Invalid Voucher Code"*) and leaves the payment summary unchanged.
 
 ## Flowchart
-
-<img width="4888" height="4324" alt="image" src="https://github.com/user-attachments/assets/9432d77f-bc48-4c4f-9413-cade5c9032a3" />
+<img width="1202" height="1061" alt="food system diagrams drawio" src="https://github.com/user-attachments/assets/c396f0f0-bd27-4a54-9957-558072de78ad" />
 
