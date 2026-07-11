@@ -1,17 +1,28 @@
-Use Case name: View and Modify Cart
-Actor: Customer
-Goal: The customer can view items in the cart and modify them by updating quantities, adding special requests to the restaurant, and applying vouchers if available.
+# Use Case: View and Modify Cart
 
-Preconditions: The customer is authenticated by the application login mechanism, and a cart has been previously created after selecting a meal from a specific restaurant.
+**Actor:** Customer  
+**Goal:** The customer can view items in their cart, adjust quantities, customize meal options, add special requests, apply vouchers, and view an updated payment summary.  
+**Preconditions:** The customer is authenticated, and a cart has been previously created containing at least one meal from a specific restaurant.
 
-Main Flow:
-1. The customer opens the application.
-2. If the customer is not already authenticated, they are prompted to provide their credentials.
-3. If the customer is logged in successfully or remains logged in from a previous session, they can select the cart icon.
-4. The selected restaurant name is displayed along with items already added to the cart, showing the name, price, and quantity of each item.
-5. The customer can increase or decrease the quantity, or delete individual items.
-6. The customer can update each item individually and customize their meal choice or quantity.
-7. The customer can add new items to the cart.
-8. Suggestions of similar meals from the same restaurant are provided to the user.
-9. The customer can add any special requests to the restaurant regarding the meal.
-10. A payment summary is displayed to the customer on the same page, including the delivery fee, service fee, and total amount.
+### Main Flow
+1. The customer selects the **Cart** icon.
+2. The system displays the restaurant's name, the items currently in the cart (showing name, price, and quantity), and a list of suggested similar meals from the same restaurant.
+3. The system displays the payment summary, including the subtotal, delivery fee, service fee, and total amount.
+4. The customer can modify the cart by performing any of the following actions:
+   * **Inline Modifications:** Adjusting item quantities (incrementing/decrementing) or deleting items directly from the main cart screen.
+   * **Item Customization Popup:** Selecting an individual item to open its details window, allowing them to modify specific choices (e.g., changing sizes, selecting sauces) or adjust the quantity before saving.
+   * **Adding Suggestions:** Selecting a suggested meal to add it directly to the cart.
+   * **Special Requests:** Adding specific notes or instructions for the restaurant regarding the meal.
+   * **Applying Vouchers:** Entering a voucher code to claim a discount.
+5. The system dynamically updates the item details, quantities, and the overall payment summary to reflect the customer's changes.
+6. The customer selects the option to proceed to checkout.
+
+### Alternative Flows
+
+* **Alternative Flow A: Cart becomes empty**
+  1. In Step 4, the customer deletes all items from the cart.
+  2. The system clears the payment summary and displays an "Empty Cart" status screen with a button to return to browsing.
+
+* **Alternative Flow B: Invalid Voucher Code**
+  1. In Step 4, the customer applies an invalid, expired, or inapplicable voucher code.
+  2. The system displays an error message (e.g., *"Invalid Voucher Code"*) and leaves the payment summary unchanged.
