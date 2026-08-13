@@ -1,6 +1,6 @@
-# Food Tracking System
+#Javaeats Lite
 
-A comprehensive food-ordering and tracking application designed to streamline the user experience from discovery to delivery.
+Javaeats Lite is a comprehensive food-ordering and tracking application designed to streamline the user experience from discovery to delivery.
 
 ---
 
