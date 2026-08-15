@@ -13,10 +13,10 @@ Empowers users to find their preferred meals efficiently by browsing detailed re
 
 #### Key functionalities
 - **Advanced Sorting**
-  - Sort by Rating — show highest-rated restaurants first.
-  - Sort by Recommendation — highlight platform-curated or popular picks.
-  - Sort by Name — alphabetical listing (A–Z).
-  - Sort by Fast Delivery — prioritize restaurants with shortest travel time.
+  - Sort by Rating: show highest-rated restaurants first.
+  - Sort by Recommendation: highlight platform-curated or popular picks.
+  - Sort by Name: alphabetical listing (A–Z).
+  - Sort by Fast Delivery: prioritize restaurants with shortest travel time.
 
 - **Multi-Layered Search**
   - Global Search: Find specific restaurants or meals across the entire platform.
@@ -30,16 +30,16 @@ Dynamic interfaces that allow customers to deeply engage with restaurant offerin
 #### Key functionalities
 
 ##### Restaurant Profile
-- Favorites — save preferred restaurants for quick future access.
-- Share — generate external links to share restaurant details.
-- Delivery Info — display delivery costs, Estimated Time of Arrival (ETA), and delivery types.
-- Delivery Validation — validate delivery feasibility against the restaurant's operational radius before ability to select restaurant.
+- Favorites: save preferred restaurants for quick future access.
+- Share: generate external links to share restaurant details.
+- Delivery Info: display delivery costs, Estimated Time of Arrival (ETA), and delivery types.
+- Delivery Validation: validate delivery feasibility against the restaurant's operational radius before ability to select restaurant.
 
 ##### Dynamic Menu
-- Categorization — browse items by category (e.g. Top picks, Offers, Desserts, Hot Deals!, Appetizers, Entrees, Drinks).
+- Categorization: browse items by category (e.g. Top picks, Offers, Desserts, Hot Deals!, Appetizers, Entrees, Drinks).
 - Meal Customization:
   - Add items to the cart.
-  - Increase / decrease item quantity.
+  - Increase/ decrease item quantity.
   - Add special notes for kitchen staff (e.g., "extra sauce").
 
 ---
@@ -71,8 +71,8 @@ A frictionless transaction process handling everything from payment preferences 
 ---
 
 ### 5. Order Lifecycle
-- **Place Order** — execute the final purchase and receive confirmation message along with an estimated delivery or pickup time.
-- **Stop / Cancel Order**
+- **Place Order** : execute the final purchase and receive confirmation message along with an estimated delivery or pickup time.
+- **Stop / Cancel Order** :
   - Cancellation is allowed based on system constraints and current workflow milestones.
   - Automatic Cancellation restrictions apply once preparation begins or the order is out for delivery, with clear UI messaging explaining the reasons why cancellation is disallowed.
     
