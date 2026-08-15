@@ -3,17 +3,19 @@
 This diagram illustrates the complete database schema for the JavaEats Lite food delivery application, showing all entities, their attributes, and the relationships between them.
 
 ```mermaid
+---
+config:
+  layout: elk
+---
 erDiagram
     direction LR
 
-    %% Customer and saved data
     USER ||--o{ ADDRESS : "has"
     USER ||--o{ ORDER : "places"
     USER ||--o{ RESTAURANT_FAVORITE : "saves"
     USER ||--o| CART : "owns"
     USER ||--o{ SAVED_PAYMENT_METHOD : "stores"
 
-    %% Restaurant catalog
     RESTAURANT ||--o{ MENU_ITEM : "offers"
     RESTAURANT ||--o{ RESTAURANT_FAVORITE : "is saved by"
     RESTAURANT ||--o{ RESTAURANT_DELIVERY_OPTION : "supports"
@@ -22,25 +24,21 @@ erDiagram
     MODIFIER_GROUP ||--o{ MODIFIER_OPTION : "offers"
     MENU_ITEM ||--o{ PROMOTION : "has"
 
-    %% Cart
     CART ||--o{ CART_ITEM : "contains"
     MENU_ITEM ||--o{ CART_ITEM : "is added to"
     CART_ITEM ||--o{ CART_ITEM_SELECTION : "contains"
     MODIFIER_OPTION ||--o{ CART_ITEM_SELECTION : "is selected in"
 
-    %% Delivery configuration
-    DELIVERY_OPTION ||--o{ RESTAURANT_DELIVERY_OPTION : "is configured as"
+    DELIVERY_OPTION ||--o{ RESTAURANT_DELIVERY_OPTION : "defines"
     RESTAURANT_DELIVERY_OPTION ||--o{ ORDER : "is selected for"
 
-    %% Orders and fulfillment
     RESTAURANT ||--o{ ORDER : "receives"
-    ADDRESS ||--o{ ORDER : "is preferred for"
+    ADDRESS ||--o{ ORDER : "is used for"
     RIDER o|--o{ ORDER : "may deliver"
     ORDER ||--|{ ORDER_ITEM : "contains"
     MENU_ITEM ||--o{ ORDER_ITEM : "is purchased as"
     ORDER ||--|| PAYMENT : "has"
 
-    %% Entities
     USER {
         int user_id PK
         string email
@@ -56,6 +54,7 @@ erDiagram
         string street_details
         decimal latitude
         decimal longitude
+        char default_address
     }
 
     RESTAURANT {
@@ -167,7 +166,7 @@ erDiagram
         int order_id PK
         int user_id FK
         int restaurant_id FK
-        int rider_id FK "Nullable for pickup orders"
+        int rider_id FK "Nullable for pickup"
         int address_id FK "Preferred saved address"
         int config_id FK
         string status
