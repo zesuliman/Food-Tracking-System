@@ -1,15 +1,32 @@
 # 🍔Javaeats Lite Project
 
-**Javaeats Lite** is a comprehensive, multi-tier food-ordering and tracking system designed to streamline the user experience from discovery to delivery. Built to connect hungry customers with their favorite restaurants, the platform provides a user-friendly, secure, and highly available environment for seamless meal exploration and order management.
+**Javaeats Lite** is a comprehensive, multi-tier food-ordering and tracking system designed to streamline the user experience from discovery to delivery. Built to connect hungry customers with their favorite restaurants, the platform supports browsing, customization, and order tracking.
 
 
 ## 📑 Table of Contents
 
-  
+- [Key Features](#key-features)
+  - [1. Meal Discovery & Exploration](#1-meal-discovery--exploration)
+  - [2. Restaurant & Menu Interaction](#2-restaurant--menu-interaction)
+  - [3. Efficient Cart & Order Management](#3-efficient-cart--order-management)
+  - [4. Checkout & Fulfillment](#4-checkout--fulfillment)
+  - [5. Order Lifecycle](#5-order-lifecycle)
+  - [6. User Registration and Login](#6-user-registration-and-login)
+- [Core Engineering Challenges](#core-engineering-challenges)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Local Setup](#local-setup)
+  - [Build & Run](#build--run)
+- [How to Tweak This Project for Your Own Uses](#how-to-tweak-this-project-for-your-own-uses)
+- [Find a Bug?](#find-a-bug)
+- [Known Issues (Work in Progress)](#known-issues-work-in-progress)
+- [Like this project?](#like-this-project)
+
+
 ## ✨ Key Features
 
 ### 1. Meal Discovery & Exploration
-Empowers users to find their preferred meals efficiently by browsing detailed restaurant profiles and categorized menus. Users can make informed decisions by viewing item contents, prices, and portion sizes.
+Empowers users to find their preferred meals efficiently by browsing detailed restaurant profiles and categorized menus. Users can make informed decisions by viewing item contents, prices, and portions.
 
 #### Key functionalities
 - **Advanced Sorting**
@@ -97,7 +114,7 @@ Designing a seamless, intuitive UI/UX that allows users to effortlessly transiti
 Ensuring the REST API and backend infrastructure remain highly available and resilient, efficiently handling concurrent traffic to seamlessly connect a large volume of customers with a wide range of restaurants.
 
 ### Security
-Implementing robust system architecture to protect user data. This includes secure password hashing, secure session management, strict input validation to prevent injection attacks, and role-based access control to protect sensitive API endpoints.
+Implementing robust system architecture to protect user data. This includes secure password hashing, secure session management, strict input validation to prevent injection attacks, and role-based access controls.
 
 
 ## 🚀 Getting Started
@@ -131,16 +148,18 @@ spring.datasource.password=your_password
 ./mvnw spring-boot:run
 ```
    
-💡 How to Tweak This Project for Your Own Uses
-Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate for building modern, scalable e-commerce solutions!
+## 💡 How to Tweak This Project for Your Own Uses
 
-🐛 Find a Bug?
-If you find an issue or would like to submit an improvement, please submit an issue using the Issues tab above. If you would like to submit a Pull Request (PR) with a fix, please reference the issue you created!
+Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate for building modern, scalable e-commerce solutions — feel free to adapt the data models, UI, and integrations (payments, mapping, notifications) to match your needs. Consider adding CI, automated tests, and deployment scripts when you adapt this for production use.
 
-🚧 Known Issues (Work in Progress)
-This project is still ongoing. The user interface and portions of the business logic are currently in development. Stay tuned for updates!
+## 🐛 Find a Bug?
 
-☕ Like this project?
-If you find this project helpful and are feeling generous,  [buy me a coffee!](https://buymeacoffee.com/zeinab.ibrahim?new=1) 
+If you find an issue or would like to suggest an improvement, please open an issue in the repository using the Issues tab. If you'd like to submit a fix, open a Pull Request and reference the related issue in your PR description so we can track and review it easily.
 
+## 🚧 Known Issues (Work in Progress)
 
+This project is still under active development. Some areas — including parts of the user interface and portions of the business logic — remain work in progress. Expect intermittent breaking changes while features are being implemented and refined. Contributions are welcome; please check open issues before starting significant work to avoid duplication.
+
+## ☕ Like this project?
+
+If you find this project helpful and would like to support it, consider buying me a coffee: [buy me a coffee!](https://buymeacoffee.com/zeinab.ibrahim?new=1)
