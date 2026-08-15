@@ -1,40 +1,39 @@
-# Javaeats Lite Project
+# 🍔Javaeats Lite Project
 
-**Javaeats Lite** is a comprehensive food-ordering and tracking system designed to streamline the user experience from discovery to delivery. The system provides a user-friendly platform for customers to explore and order from a variety of restaurants.
+**Javaeats Lite** is a comprehensive, multi-tier food-ordering and tracking system designed to streamline the user experience from discovery to delivery. Built to connect hungry customers with their favorite restaurants, the platform provides a user-friendly, secure, and highly available environment for seamless meal exploration and order management.
 
 
-## Table of Contents
+## 📑 Table of Contents
 
   
 ## ✨ Key Features
 
-### 1. Improved customer experience through meal discovery & exploration
-The system helps users find their preferred meals efficiently through exploring a list of restaurants and viewing their details and different categories. users can make informed decisions about their meal through knowing the item contents, prices, and size.
+### 1. Meal Discovery & Exploration
+Empowers users to find their preferred meals efficiently by browsing detailed restaurant profiles and categorized menus. Users can make informed decisions by viewing item contents, prices, and portion sizes.
 
 #### Key functionalities
-- **Sorting**
+- **Advanced Sorting**
   - Sort by Rating — show highest-rated restaurants first.
-  - Sort by Recommendation — platform-curated or popular picks.
+  - Sort by Recommendation — highlight platform-curated or popular picks.
   - Sort by Name — alphabetical listing (A–Z).
   - Sort by Fast Delivery — prioritize restaurants with shortest travel time.
 
 - **Multi-Layered Search**
-  - Global Search — find restaurants or specific meals across the platform.
-  - Menu Search — search for specific items within a selected restaurant's menu.
+  - Global Search: Find specific restaurants or meals across the entire platform.
+  - Menu Search: Search for exact items within a selected restaurant's menu.
 
 ---
 
 ### 2. Restaurant & Menu Interaction
-Customers can browse and engage with restaurants, menus, and select items.
+Dynamic interfaces that allow customers to deeply engage with restaurant offerings, browse menus, select items and customize their orders.
 
 #### Key functionalities
 
 ##### Restaurant Profile
-- Favorites — save restaurants for quick future access.
-- Share — generate links to share restaurant details externally.
-- Delivery Info — show delivery costs, Estimated Time of Arrival (ETA), and delivery types.
-- Delivery Validation — validate delivery feasibility against the restaurant's delivery radius before ability to select restaurant.
-
+- Favorites — save preferred restaurants for quick future access.
+- Share — generate external links to share restaurant details.
+- Delivery Info — display delivery costs, Estimated Time of Arrival (ETA), and delivery types.
+- Delivery Validation — validate delivery feasibility against the restaurant's operational radius before ability to select restaurant.
 
 ##### Dynamic Menu
 - Categorization — browse items by category (e.g. Top picks, Offers, Desserts, Hot Deals!, Appetizers, Entrees, Drinks).
@@ -42,79 +41,96 @@ Customers can browse and engage with restaurants, menus, and select items.
   - Add items to the cart.
   - Increase / decrease item quantity.
   - Add special notes for kitchen staff (e.g., "extra sauce").
-  - Show available modifiers, option groups, and constraints (required/optional).
 
 ---
 
 ### 3. Efficient Cart & Order Management
-users can add items to their cart, change the quantities or size, and remove ones if needed. Also users can review order details before checkout.
+A robust cart system ensuring the ability of cart customization and accurate order placement while minimizing errors and misunderstandings before checkout.
 
 #### Key functionalities
 
-##### Cart Overview
-- Item Control — adjust quantities or remove items easily.
-- Order Management - accurate order placement and reduce errors and misunderstandings.
-- Persistence — ensure cart contents persist across sessions and devices (e.g., server-side cart tied to user account or persistent local storage for guests).
-
-##### Price Transparency
-- Show detailed breakdown:
-  - Subtotal
-  - Discounts / Promotions
-  - Delivery Fee
-  - Service Fee
-  - Taxes
-  - Total
-
-##### Pre-Checkout
-- Confirmation — provide a final review of order details, fees, and delivery info before proceeding.
+- Item Control: easily adjust quantities, modify sizes or remove items easily.
+- State Persistence: Cart contents reliably persist across user sessions and devices.
+- Price Transparency: Detailed breakdown of Subtotal, Discounts/Promotions, Delivery Fee, Service Fee, Taxes, and the Final Total.
+- Pre-Checkout and Cart Review: A final confirmation screen to verify order details, fees, and delivery info.
 
 ---
 
 ### 4. Checkout & Fulfillment
-The system allows the users Complete the transaction, proceed to checkout, and handle delivery and payment preferences.
+A frictionless transaction process handling everything from payment preferences to final drop-off instructions.
 
 #### Address & Payment
-- Address Management — select saved addresses or add new addresses.
-- Payment Methods — support multiple payment options (cards, in-app payments, cash on delivery where applicable).
+- Address Management: select saved addresses or add new addresses.
+- Payment Methods: support multiple payment options (cards, in-app payments, cash on delivery where applicable) and securely add used payment methods.
 
 #### Delivery Preferences
-- Express Delivery — optional toggle for expedited delivery where available.
-- Rider Support — tipping functionality for riders.
-- Delivery Instructions — free-text drop-off specifics for the rider.
+- Express Delivery: optional toggle for expedited delivery where available.
+- Rider Support: tipping functionality for riders.
+- Delivery Instructions: free-text drop-off specifics for the rider.
 
 ---
 
 ### 5. Order Lifecycle
 - **Place Order** — execute the final purchase and receive confirmation message along with an estimated delivery or pickup time.
 - **Stop / Cancel Order**
-  - Allow cancellation subject to system constraints and current order status.
-  - Restrict cancellation after certain workflow milestones (e.g., once the restaurant has accepted and begun preparation or when the order is out for delivery).
-  - Provide clear UI states and reasons when cancellation is disallowed.
+  - Cancellation is allowed based on system constraints and current workflow milestones.
+  - Automatic Cancellation restrictions apply once preparation begins or the order is out for delivery, with clear UI messaging explaining the reasons why cancellation is disallowed.
+    
+---
 
 ### 6. User Registration and Login
-allows for a personalized and secure experiences.
+Delivers a personalized and secure experience for every user.
+
 #### Key functionalities
-- create user accounts and log in.
-- manage profile
-- history tracking.
-- saving preferences.
-- receiving recommendations.
+- Secure account creation and authentication.
+- Comprehensive profile and preference management.
+- Order history tracking.
+- personalized meal recommendations.
 
 
 ## ⚙️ Core Engineering Challenges
 
 ### Usability
-The system allows users to discover and order from restaurants in a seamless and intuitive manner while utilizing a user-friendly interface.
+Designing a seamless, intuitive UI/UX that allows users to effortlessly transition from discovering new restaurants to finalizing their checkout, minimizing friction at every step.
 
 ### Availability
-The system should provide an online platform that connect customers with a wide range of customers.
+Ensuring the REST API and backend infrastructure remain highly available and resilient, efficiently handling concurrent traffic to seamlessly connect a large volume of customers with a wide range of restaurants.
 
-### Security 
+### Security
+Implementing robust system architecture to protect user data. This includes secure password hashing, secure session management, strict input validation to prevent injection attacks, and role-based access control to protect sensitive API endpoints.
 
 
 ## 🚀 Getting Started
+### Prerequisites
+To run Javaeats Lite locally, ensure you have the following installed:
 
+- Java 17+
+- Spring Boot (via Maven or Gradle)
+- MySQL
+- Docker (Optional, for containerized database and app deployment)
 
+### Local Setup
+1. Clone the repository:
+   
+```bash
+git clone https://github.com/yourusername/javaeats-lite.git
+cd javaeats-lite
+```
+
+2. Configure the Database:
+Update your application.properties or application.yml file with your local MySQL credentials:
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/javaeats_db
+spring.datasource.username=root
+spring.datasource.password=your_password
+```
+
+3. Build and Run
+```bash
+./mvnw clean install
+./mvnw spring-boot:run
+```
+   
 💡 How to Tweak This Project for Your Own Uses
 Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate for building modern, scalable e-commerce solutions!
 
