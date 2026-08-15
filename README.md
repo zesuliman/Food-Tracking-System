@@ -1,20 +1,23 @@
 # Javaeats Lite Project
 
-**Javaeats Lite** is a comprehensive food-ordering and tracking system designed to streamline the user experience from discovery to delivery. The system provides a user-friendly platform for customers to explore and order from a variety of restaurants.
+**Javaeats Lite** is a comprehensive food-ordering and tracking system designed to streamline the user experience from discovery to delivery. The system provides a user-friendly platform for custom[...]
 
 
 ## Table of Contents
+- [Key Features](#key-features)
 - [1. Discovery & Exploration](#1-discovery--exploration)
 - [2. Restaurant & Menu Interaction](#2-restaurant--menu-interaction)
 - [3. Cart & Order Management](#3-cart--order-management)
 - [4. Checkout & Fulfillment](#4-checkout--fulfillment)
-- [Order Lifecycle](#order-lifecycle)
-- [Notes](#notes)
-  
-## ✨ Key Features
+- [5. Order Lifecycle](#5-order-lifecycle)
+- [6. User Registration and Login](#6-user-registration-and-login)
+- [Core Engineering Challenges](#core-engineering-challenges)
+- [Getting Started](#getting-started)
 
-### 1. Improved customer experience through meal discovery & exploration
-The system helps users find their preferred meals efficiently through exploring a list of restaurants and viewing their details and different categories. users can make informed decisions about their meal through knowing the item contents, prices, and size.
+## Key Features
+
+### 1. Discovery & Exploration
+The system helps users find their preferred meals efficiently through exploring a list of restaurants and viewing their details and different categories. users can make informed decisions about their [...]
 
 #### Key functionalities
 - **Sorting**
@@ -116,14 +119,14 @@ The system should provide an online platform that connect customers with a wide 
 ### Security 
 
 
-## 🚀 Getting Started
+## Getting Started
 
 
 💡 How to Tweak This Project for Your Own Uses
-Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate for building modern, scalable e-commerce solutions!
+Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate for building modern, scalable e-commerce solutions[...]
 
 🐛 Find a Bug?
-If you find an issue or would like to submit an improvement, please submit an issue using the Issues tab above. If you would like to submit a Pull Request (PR) with a fix, please reference the issue you created!
+If you find an issue or would like to submit an improvement, please submit an issue using the Issues tab above. If you would like to submit a Pull Request (PR) with a fix, please reference the issue y[...]
 
 🚧 Known Issues (Work in Progress)
 This project is still ongoing. The user interface and portions of the business logic are currently in development. Stay tuned for updates!
