@@ -1,23 +1,15 @@
 # Javaeats Lite Project
 
-**Javaeats Lite** is a comprehensive food-ordering and tracking system designed to streamline the user experience from discovery to delivery. The system provides a user-friendly platform for custom[...]
+**Javaeats Lite** is a comprehensive food-ordering and tracking system designed to streamline the user experience from discovery to delivery. The system provides a user-friendly platform for customers to explore and order from a variety of restaurants.
 
 
 ## Table of Contents
-- [Key Features](#key-features)
-- [1. Discovery & Exploration](#1-discovery--exploration)
-- [2. Restaurant & Menu Interaction](#2-restaurant--menu-interaction)
-- [3. Cart & Order Management](#3-cart--order-management)
-- [4. Checkout & Fulfillment](#4-checkout--fulfillment)
-- [5. Order Lifecycle](#5-order-lifecycle)
-- [6. User Registration and Login](#6-user-registration-and-login)
-- [Core Engineering Challenges](#core-engineering-challenges)
-- [Getting Started](#getting-started)
 
-## Key Features
+  
+## ✨ Key Features
 
-### 1. Discovery & Exploration
-The system helps users find their preferred meals efficiently through exploring a list of restaurants and viewing their details and different categories. users can make informed decisions about their [...]
+### 1. Improved customer experience through meal discovery & exploration
+The system helps users find their preferred meals efficiently through exploring a list of restaurants and viewing their details and different categories. users can make informed decisions about their meal through knowing the item contents, prices, and size.
 
 #### Key functionalities
 - **Sorting**
@@ -79,7 +71,7 @@ users can add items to their cart, change the quantities or size, and remove one
 ---
 
 ### 4. Checkout & Fulfillment
-Focus: Complete the transaction and handle delivery preferences.
+The system allows the users Complete the transaction, proceed to checkout, and handle delivery and payment preferences.
 
 #### Address & Payment
 - Address Management — select saved addresses or add new addresses.
@@ -93,7 +85,7 @@ Focus: Complete the transaction and handle delivery preferences.
 ---
 
 ### 5. Order Lifecycle
-- **Place Order** — execute the final purchase.
+- **Place Order** — execute the final purchase and receive confirmation message along with an estimated delivery or pickup time.
 - **Stop / Cancel Order**
   - Allow cancellation subject to system constraints and current order status.
   - Restrict cancellation after certain workflow milestones (e.g., once the restaurant has accepted and begun preparation or when the order is out for delivery).
@@ -103,6 +95,7 @@ Focus: Complete the transaction and handle delivery preferences.
 allows for a personalized and secure experiences.
 #### Key functionalities
 - create user accounts and log in.
+- manage profile
 - history tracking.
 - saving preferences.
 - receiving recommendations.
@@ -111,7 +104,7 @@ allows for a personalized and secure experiences.
 ## ⚙️ Core Engineering Challenges
 
 ### Usability
-The system allows users to discover and order from restaurants in seamless and intuitive manner.
+The system allows users to discover and order from restaurants in a seamless and intuitive manner while utilizing a user-friendly interface.
 
 ### Availability
 The system should provide an online platform that connect customers with a wide range of customers.
@@ -119,14 +112,14 @@ The system should provide an online platform that connect customers with a wide 
 ### Security 
 
 
-## Getting Started
+## 🚀 Getting Started
 
 
 💡 How to Tweak This Project for Your Own Uses
-Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate for building modern, scalable e-commerce solutions[...]
+Since this is an example project, I encourage you to clone and rename this repository to use for your own purposes. It is a great starter boilerplate for building modern, scalable e-commerce solutions!
 
 🐛 Find a Bug?
-If you find an issue or would like to submit an improvement, please submit an issue using the Issues tab above. If you would like to submit a Pull Request (PR) with a fix, please reference the issue y[...]
+If you find an issue or would like to submit an improvement, please submit an issue using the Issues tab above. If you would like to submit a Pull Request (PR) with a fix, please reference the issue you created!
 
 🚧 Known Issues (Work in Progress)
 This project is still ongoing. The user interface and portions of the business logic are currently in development. Stay tuned for updates!
